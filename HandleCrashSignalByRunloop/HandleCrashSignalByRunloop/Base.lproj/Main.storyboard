@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Pg-Xq-i2t">
+                                <rect key="frame" x="107" y="269" width="106" height="30"/>
+                                <state key="normal" title="点击产生crash"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="chh-0i-bJF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YqK-xW-p7X">
+                                <rect key="frame" x="119" y="357" width="83" height="30"/>
+                                <state key="normal" title="正常的按钮"/>
+                                <connections>
+                                    <action selector="button2Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G8j-QE-IIK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7Pg-Xq-i2t" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="91" id="0UG-4V-ckw"/>
+                            <constraint firstItem="YqK-xW-p7X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="103" id="Fvb-lt-fae"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7Pg-Xq-i2t" secondAttribute="bottom" constant="269" id="GNA-EU-aU2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YqK-xW-p7X" secondAttribute="bottom" constant="181" id="KsM-jc-yuG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7Pg-Xq-i2t" secondAttribute="trailing" constant="91" id="NpQ-ju-0Oj"/>
+                            <constraint firstItem="YqK-xW-p7X" firstAttribute="top" secondItem="7Pg-Xq-i2t" secondAttribute="bottom" constant="58" id="TQ0-xp-Eue"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YqK-xW-p7X" secondAttribute="trailing" constant="102" id="cjK-Ay-QdI"/>
+                            <constraint firstItem="7Pg-Xq-i2t" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="249" id="oG9-e6-OR9"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="266" y="265"/>
+        </scene>
+    </scenes>
+</document>
